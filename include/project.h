@@ -29,7 +29,7 @@ class base {  //Actual Stuff related to project
         log("Ready to make image!");
         system("dd if=/dev/zero of=./filesystem  bs=1M count=102400");
         system("mkdir -p /media/mountPoint");
-	system("mkfs.ext4 ~/filesystem");
+	system("newfs_exfat ~/filesystem");
         log("Finished creating new fs image");
         return 0;
     }
