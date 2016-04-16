@@ -28,24 +28,23 @@ int console_main(str user){ //Console
     int enter = 0;
     log("Inside Console");
     str input;
+    int to_sys;
     int logout = 0;
     log("Consol Ready to Go");
-    system("sudo su -c exit");
+    system("sudo su c exit");
     for(enter>=0;enter<4096;enter++){
-        
-        
-        //
-        
+        to_sys=0;
         printf(user);
         printf(":~");
         gets(input);
-        if(input!="term"){
-        system(input);
-        }
-        else{
+       
+        if(strcmp(input, "term")==0){
             puts("A Project Management Console");
-            
-        }
+            to_sys=1;
+            }
+        
+        
+        if(to_sys==0){system(input);}
     }
     
     return(enter);
