@@ -6,14 +6,15 @@
 //  Copyright © 2016 Siddhant Khanna. All rights reserved.
 //
 
-class conf{
+class buffer{
 public:
-    int user[4];
-    int sign[3];
-    int setup;
     
-    void c_usr(){
-      
+    str buff[80];
+    int last=0;
+    str user;
+    
+    void li_b(str in){
+        
     }
+    
 };
-
