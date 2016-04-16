@@ -42,6 +42,10 @@ int console_main(str user){ //Console
             puts("A Project Management Console");
             to_sys=1;
             }
+        if(strcmp(input, "exit")==0){
+            system("killall exec");
+            to_sys=1;
+        }
         
         
         if(to_sys==0){system(input);}
