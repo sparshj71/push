@@ -7,8 +7,12 @@
 //
 
 
+/**/
+
 
 void concatenate(char p[], char q[]) {
+    
+    /*This function concatenates char p[] and char q[] */
     int c, d;
     
     c = 0;
@@ -39,7 +43,7 @@ typedef char str[64];
 typedef int arr[128];
 
 char * cut(str in,int c){
-    
+    /*This function removes any text before 'int c' in a char array*/
     str _out = "";
     
     int y = c;
