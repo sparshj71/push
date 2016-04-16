@@ -9,14 +9,14 @@
 
 
 
-class base {
+class base {  //Actual Stuff related to project
     str name;
     str user;
     int cs = 0;
     int ts = 0;
     str size ;
     
-    
+    //Creating a new filesystem img
     int newfs(str n , int c){
         log("New FileSystem Image");
         str mkdir = "mkdir ./" ;
@@ -32,7 +32,8 @@ class base {
         return 0;
     }
         void _init(str name,int size,str fs){
-            
+            //To mount,Format, and set image data
+            //Inclomlete
             
         }
         

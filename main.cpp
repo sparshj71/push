@@ -7,15 +7,17 @@
 //
 
 #include <iostream>
-#include "include/prop.h"
-#include "include/log.h"
-#include "include/project.h"
-#include "include/config.h"
+#include "include/prop.h" //OS Dependent funtions .. Rewritten
+#include "include/log.h"  //Log and console related stuff
+#include "include/project.h" //Class for project
+#include "include/config.h"  //Console Confug .. Unused
 
-pthread_t t2l;
+//pthread_t t2l; //Another thread
 
-base proj;
 
+//Initiaialize base proj (projec.h)
+// base proj;
+//Not to be used while it is incomplete
 
 
 void rootval(){

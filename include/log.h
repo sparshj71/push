@@ -6,7 +6,7 @@
 //  Copyright © 2016 Siddhant Khanna. All rights reserved.
 //
 
-void log(str in ){
+void log(str in ){ //Logging functiom
     
     str echo="echo ";
     concatenate(echo,in);
@@ -23,7 +23,7 @@ void system(str *a, str *b){
 }
 
 
-int console_main(str user){
+int console_main(str user){ //Console
     
     int enter = 0;
     log("Inside Console");
@@ -32,6 +32,10 @@ int console_main(str user){
     log("Consol Ready to Go");
     system("sudo su -c exit");
     for(enter>=0;enter<4096;enter++){
+        
+        
+        //
+        
         printf(user);
         printf(":~");
         gets(input);
@@ -48,7 +52,7 @@ int console_main(str user){
 }
 
 
-class console{
+class console{  //incomplete console stuff
 public:
   const str sh = "bash ";
   const str echo = "echo ";
