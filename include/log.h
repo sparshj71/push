@@ -30,6 +30,8 @@ int console_main(str user){ //Console
     str input;
     int to_sys;
     int logout = 0;
+    keypad(stdscr, TRUE);
+    raw();				
     log("Consol Ready to Go");
     system("sudo su c exit");
     for(enter>=0;enter<4096;enter++){

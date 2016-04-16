@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <ncurses.h>
 #include "include/prop.h" //OS Dependent funtions .. Rewritten
 #include "include/log.h"  //Log and console related stuff
 #include "include/project.h" //Class for project
